@@ -1,0 +1,220 @@
+/* Reset & Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+body.dark-mode header.input-section,
+body.dark-mode footer {
+    background-color: #444;
+}
+
+body.dark-mode main ul#task-list li {
+    background: #555;
+}
+
+/* Header (Input Section) */
+header.input-section {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Header Top: Contains the Title and Dark Mode Button */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header.input-section h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* New container for grouping inputs in one row */
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows wrapping on smaller screens */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure each input/select takes up only as much space as needed */
+.input-row input,
+.input-row select {
+    flex: 1;
+    min-width: 120px;
+    /* you can adjust this as needed */
+}
+
+/* Set the Add Task button to its natural (max-content) width */
+#add-task-btn {
+    width: max-content;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Icon Style */
+.dark-mode-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Inputs, Selects, and Buttons */
+header.input-section input,
+header.input-section select,
+header.input-section button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Button Styling */
+header.input-section button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+header.input-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Background Image Section */
+.bg-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+main ul#task-list {
+    list-style: none;
+}
+
+main ul#task-list li {
+    background: #f1f1f1;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for Completed Tasks */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Buttons inside Task Items */
+main ul#task-list li button {
+    margin-left: 10px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+main ul#task-list li .complete-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+main ul#task-list li .complete-btn:hover {
+    background-color: #218838;
+}
+
+main ul#task-list li .remove-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+main ul#task-list li .remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Optional: Priority-based Styles */
+.high {
+    border-left: 5px solid #dc3545;
+}
+
+.medium {
+    border-left: 5px solid #ffc107;
+}
+
+.low {
+    border-left: 5px solid #28a745;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.webp" type="image/webp">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Task Input Section -->
+    <header class="input-section">
+        <div class="header-top">
+            <h1>To-Do List App</h1>
+            <button id="dark-mode-toggle">
+                <img src="dark_mode_icon.png" alt="Toggle Dark Mode" class="dark-mode-icon">
+            </button>
+        </div>
+        <!-- Grouping task inputs in one row -->
+        <div class="input-row">
+            <!-- Task Inputs -->
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <select id="priority-input">
+                <option value="High">High Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="Low">Low Priority</option>
+            </select>
+            <!-- Task Category -->
+            <input type="date" id="due-date-input">
+            <select id="category-input">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="School">School</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <!-- Background image selector -->
+        <div class="bg-image-section">
+            <label for="bg-image-upload">Upload Background Image:</label>
+            <input type="file" id="bg-image-upload" accept="image/*">
+            <button id="change-bg-btn">Set Background</button>
+        </div>
+    </header>
+
+
+    <!-- Task List -->
+    <main>
+        <ul id="task-list"></ul>
+    </main>
+
+    <footer>
+        <p>Designed and Developed by Dipsana. | <a href="https://www.linkedin.com/in/dipsana-roy-97a5432b1">My
+                Linkedin</a></p>
+        <p>© 2025 Dipsana. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
