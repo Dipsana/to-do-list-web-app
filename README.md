@@ -1,6 +1,6 @@
-# To-Do List App
+# To-Do List Web Application
 
-A simple, responsive To-Do List web application designed to help users efficiently organize tasks. The app allows task prioritization, due dates, category management, and even a dark mode for better usability.
+A simple, responsive To-Do List web application designed to help users efficiently organize tasks. The app allows task prioritization, due dates, category management, dark mode and even a custom background image functionality for better usability.
 
 ## Features
 
